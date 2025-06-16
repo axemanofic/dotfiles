@@ -1,0 +1,5 @@
+[tools]
+go = "latest"
+poetry = "latest"
+python = "latest"
+uv = "latest"

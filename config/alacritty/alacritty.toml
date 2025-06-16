@@ -1,0 +1,40 @@
+[general]
+live_config_reload = true
+ipc_socket = true
+import = [
+  "C:\\Users\\axeman\\AppData\\Roaming\\alacritty\\themes\\catppuccin-mocha.toml",
+  "C:\\Users\\axeman\\AppData\\Roaming\\alacritty\\fonts.toml",
+  # "/home/axeman/.config/alacritty/themes/catppuccin-macchiato.toml",
+  # "/home/axeman/.config/alacritty/fonts.toml",
+]
+
+[env]
+TERM = "xterm-256color"
+COLORTERM = "truecolor"
+LANG = "en_US.UTF-8"
+
+[window]
+decorations = "none"
+dynamic_padding = true
+dynamic_title = false
+startup_mode = "Maximized"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[mouse]
+hide_when_typing = false
+
+[debug]
+render_timer = false
+persistent_logging = false
+log_level = "Warn"
+renderer = "None"
+print_events = false
+highlight_damage = false
+prefer_egl = false
+
+[terminal.shell]
+program = "wsl"
+args = ["--cd", "~"]
