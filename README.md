@@ -1,6 +1,7 @@
 # dotfiles
 
-![preview](/assets/preview.png)
+![preview](/assets/preview.webp)
+![preview-all](/assets/preview-all.webp)
 
 Comming soon
 
