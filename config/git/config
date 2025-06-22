@@ -42,9 +42,8 @@
 
 [status]
   branch = true
-  short = true
+  short = false
   showStash = true
-  showUntrackedFiles = all  # show individual untracked files
 
 [pager]
   branch = false  # no need to use pager for git branch

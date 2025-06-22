@@ -1,4 +1,4 @@
-return {
+local M = {
   ensure_installed = {
     "vim",
     "vimdoc",
@@ -17,7 +17,8 @@ return {
     "jsonc",
     "go",
   },
-  indent = {
-    enable = true,
-  },
+  sync_install = false,
+  highlight = { enable = true },
+  indent = { enable = true },
 }
+return M

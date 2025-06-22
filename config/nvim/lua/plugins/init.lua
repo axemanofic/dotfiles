@@ -61,4 +61,9 @@ return {
       require "configs.lint"
     end,
   },
+  { import = "nvchad.blink.lazyspec" },
+  {
+    "mason-org/mason.nvim",
+    opts = require "configs.mason",
+  },
 }

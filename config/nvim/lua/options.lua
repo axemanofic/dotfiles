@@ -1,10 +1,23 @@
 require "nvchad.options"
 
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-end
+local ns = require("lint").get_namespace "mypy"
+vim.diagnostic.config({ virtual_text = true }, ns)
+vim.diagnostic.config {
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN] = " ",
+      [vim.diagnostic.severity.INFO] = "󰋼 ",
+      [vim.diagnostic.severity.HINT] = "󰌵 ",
+    },
+    numhl = {
+      [vim.diagnostic.severity.ERROR] = "",
+      [vim.diagnostic.severity.WARN] = "",
+      [vim.diagnostic.severity.HINT] = "",
+      [vim.diagnostic.severity.INFO] = "",
+    },
+  },
+}
 
 -- add yours here
 
@@ -54,6 +67,10 @@ opt.shortmess:append "sI"
 -- See: https://github.com/neovim/nvim-lspconfig/tree/54eb2a070a4f389b1be0f98070f81d23e2b1a715#suggested-configuration
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+vim.keymap.set("n", "[d", function()
+  vim.diagnostic.jump { count = -1, float = true }
+end, opts)
+vim.keymap.set("n", "]d", function()
+  vim.diagnostic.jump { count = 1, float = true }
+end, opts)
 vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
