@@ -2,10 +2,10 @@
 live_config_reload = true
 ipc_socket = true
 import = [
-  "C:\\Users\\axeman\\AppData\\Roaming\\alacritty\\themes\\catppuccin-mocha.toml",
-  "C:\\Users\\axeman\\AppData\\Roaming\\alacritty\\fonts.toml",
-  # "/home/axeman/.config/alacritty/themes/catppuccin-macchiato.toml",
-  # "/home/axeman/.config/alacritty/fonts.toml",
+  "%APPDATA%\\alacritty\\themes\\catppuccin-mocha.toml",
+  "%APPDATA%\\Users\\axeman\\AppData\\Roaming\\alacritty\\fonts.toml",
+  "~/.config/alacritty/themes/catppuccin-macchiato.toml",
+  "~/.config/alacritty/fonts.toml",
 ]
 
 [env]
@@ -35,6 +35,6 @@ print_events = false
 highlight_damage = false
 prefer_egl = false
 
-[terminal.shell]
-program = "wsl"
-args = ["--cd", "~"]
+# [terminal.shell]
+# program = "wsl"
+# args = ["--cd", "~"]
