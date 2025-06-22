@@ -9,4 +9,4 @@ tasks:
     silent: true
   sync:
     cmds:
-      - cp -r ~/.dotfiles/config/* ~/.config/*
+      - cp -r ~/.dotfiles/config/* ~/.config/
