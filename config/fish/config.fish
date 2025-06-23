@@ -64,3 +64,4 @@ alias ipy='uvx ipython'
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
+fx --comp fish | source
