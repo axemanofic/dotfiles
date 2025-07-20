@@ -1,0 +1,4 @@
+package autovenv
+package brew
+package fzf
+theme default
