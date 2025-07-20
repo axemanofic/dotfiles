@@ -1,5 +1,9 @@
 [tools]
 go = "latest"
+lua = "5.1"
 poetry = "latest"
 python = "latest"
 uv = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]

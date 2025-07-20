@@ -60,7 +60,7 @@ alias ipy='uvx ipython'
 # To initialize utilities
 #
 #
-~/.local/bin/mise activate fish | source
+mise activate fish | source
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
