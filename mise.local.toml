@@ -1,3 +1,7 @@
 [tasks.sync]
 description = "Copy files from ./config to ~/.config"
 run = "cp -r ~/.dotfiles/config/* ~/.config/"
+
+[tasks.nvim]
+description = "Sync nvim config"
+run = "cp -r ~/.dotfiles/config/nvim/* ~/.config/nvim/"
