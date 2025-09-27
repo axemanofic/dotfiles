@@ -60,6 +60,7 @@ vim.lsp.config.pylsp = {
     },
   },
 }
+vim.lsp.config.fish_lsp = {}
 
 local servers = {
   "dockerls",
@@ -67,5 +68,6 @@ local servers = {
   "gopls",
   "taplo",
   "pylsp",
+  "fish_lsp",
 }
 vim.lsp.enable(servers)

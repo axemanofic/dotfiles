@@ -1,10 +1,9 @@
 ---@type ChadrcConfig
 local M = {}
 
-local dashboards = require "configs.dashboard"
-
 M.base46 = {
   theme = "catppuccin",
+  transparency = true,
 
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
@@ -26,10 +25,22 @@ M.base46 = {
 }
 
 M.ui = {
-  nvdash = {
-    load_on_startup = true,
-    header = dashboards.dashboard.work,
+  cmp = {
+    style = "atom",
   },
+  statusline = {
+    theme = "minimal",
+    separator_style = "round",
+  },
+  telescope = { style = "bordered" },
+  tabufline = {
+    enabled = false,
+    lazyload = false,
+  },
+}
+
+M.nvdash = {
+  load_on_startup = true,
 }
 
 return M
