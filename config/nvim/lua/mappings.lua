@@ -43,12 +43,12 @@ map("n", "<leader>gl", function()
 end)
 
 -- See: https://github.com/neovim/nvim-lspconfig/tree/54eb2a070a4f389b1be0f98070f81d23e2b1a715#suggested-configuration
-local opts = { noremap = true, silent = true }
-map("n", "<space>e", vim.diagnostic.open_float, opts)
-map("n", "[d", function()
-  vim.diagnostic.jump { count = -1, float = true }
-end, opts)
-map("n", "]d", function()
-  vim.diagnostic.jump { count = 1, float = true }
-end, opts)
-map("n", "<space>q", vim.diagnostic.setloclist, opts)
+-- local opts = { noremap = true, silent = true }
+-- map("n", "<space>e", vim.diagnostic.open_float, opts)
+-- map("n", "[d", function()
+--   vim.diagnostic.jump { count = -1, float = true }
+-- end, opts)
+-- map("n", "]d", function()
+--   vim.diagnostic.jump { count = 1, float = true }
+-- end, opts)
+-- map("n", "<space>q", vim.diagnostic.setloclist, opts)
