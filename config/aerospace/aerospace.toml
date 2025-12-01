@@ -212,8 +212,20 @@ if.app-id = 'com.google.Chrome'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
-if.app-id = 'us.zoom.xos'
+if.app-id = 'org.jkiss.dbeaver.core.product'
 run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+if.app-id = 'com.postmanlabs.mac'
+run = ['move-node-to-workspace 5']
+
+[[on-window-detected]]
+if.app-id = 'us.zoom.xos'
+run = ['move-node-to-workspace 8']
+
+[[on-window-detected]]
+if.app-id = 'com.electron.kontena-lens'
+run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
