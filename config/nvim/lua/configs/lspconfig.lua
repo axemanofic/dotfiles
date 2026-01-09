@@ -61,6 +61,20 @@ vim.lsp.config.pylsp = {
   },
 }
 vim.lsp.config.fish_lsp = {}
+vim.lsp.config.vue_ls = {}
+vim.lsp.config.ts_ls = {
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = vim.fn.stdpath "data" .. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
+        languages = { "vue" },
+        configNamespace = "typescript",
+      },
+    },
+  },
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+}
 
 local servers = {
   "dockerls",
@@ -69,5 +83,7 @@ local servers = {
   "taplo",
   "pylsp",
   "fish_lsp",
+  "vue_ls",
+  "ts_ls",
 }
 vim.lsp.enable(servers)
