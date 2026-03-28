@@ -7,6 +7,9 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
+  nvim-sync:
+    cmds:
+      - cp -r ~/.dotfiles/config/nvim/* ~/.config/nvim
   sync:
     cmds:
       - cp -r ~/.dotfiles/config/* ~/.config/

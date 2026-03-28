@@ -1,0 +1,86 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run zed: open default settings from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "icon_theme": "VSCode Icons for Zed (Dark)",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha - No Italics",
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font",
+
+  // Individual status bar icons can be hidden:
+  "disable_ai": true,
+  "outline_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "git_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "agent": { "button": false },
+  "debugger": { "button": false },
+  "diagnostics": { "button": false },
+  "search": { "button": false },
+  // Control which items are shown/hidden in the title bar
+  "title_bar": {
+    "show_branch_icon": true, // Show/hide branch icon beside branch switcher
+    "show_branch_name": true, // Show/hide branch name
+    "show_project_items": false, // Show/hide project host and name
+    "show_onboarding_banner": false, // Show/hide onboarding banners
+    "show_user_picture": false, // Show/hide user avatar
+    "show_user_menu": false, // Show/hide app user button
+    "show_sign_in": false, // Show/hide sign-in button
+    "show_menus": false, // Show/hide menus
+  },
+  "toolbar": {
+    "breadcrumbs": true, // Whether to show breadcrumbs.
+    "quick_actions": false, // Whether to show quick action buttons.
+    "selections_menu": false, // Whether to show the Selections menu
+    "agent_review": false, // Whether to show agent review buttons
+    "code_actions": false, // Whether to show code action buttons
+  },
+  "status_bar": {
+    // Show/hide a button that displays the active buffer's language.
+    // Clicking the button brings up the language selector.
+    // Defaults to true.
+    "active_language_button": false,
+    // Show/hide a button that displays the cursor's position.
+    // Clicking the button brings up an input for jumping to a line and column.
+    // Defaults to true.
+    "cursor_position_button": false,
+    // Show/hide a button that displays the buffer's line-ending mode.
+    // Clicking the button brings up the line-ending selector.
+    // Defaults to false.
+    "line_endings_button": false,
+  },
+  "global_lsp_settings": {
+    // Show/hide the LSP button in the status bar.
+    // Activity from the LSP is still shown.
+    // Button is not shown if "enable_language_server" if false.
+    "button": false,
+  },
+  // Project Panel Settings
+  "project_panel": {
+    "button": false, // Show/hide button in the status bar
+    "starts_open": false,
+    "dock": "right",
+  },
+  // Terminal Panel Settings
+  "terminal": {
+    "button": false, // Show/hide status bar icon
+    // Terminal Font Settings
+    "font_family": "JetBrainsMono Nerd Font",
+  },
+  // Customize the tab bar appearance
+  "tab_bar": {
+    "show": false, // Show/hide the tab bar
+    "show_nav_history_buttons": false, // Show/hide history buttons on tab bar
+    "show_tab_bar_buttons": false, // Show hide buttons (new, split, zoom)
+  },
+}

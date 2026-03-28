@@ -1,7 +1,7 @@
 require "nvchad.options"
 
-local ns = require("lint").get_namespace "mypy"
-vim.diagnostic.config({ virtual_text = true }, ns)
+-- local ns = require("configs.lint").get_namespace "mypy"
+-- vim.diagnostic.config({ virtual_text = true }, ns)
 vim.diagnostic.config {
   signs = {
     text = {
