@@ -7,9 +7,20 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
+
+  # neovim
   nvim-sync:
     cmds:
       - cp -r ~/.dotfiles/config/nvim/* ~/.config/nvim
+  nvim-clean:
+    cmds:
+      - rm -rf ~/.local/share/nvim/
+      - rm -rf ~/.local/state/nvim/
+
+  fish-sync:
+    cmds:
+      - cp -r ~/.dotfiles/config/fish/* ~/.config/fish
+
   sync:
     cmds:
       - cp -r ~/.dotfiles/config/* ~/.config/

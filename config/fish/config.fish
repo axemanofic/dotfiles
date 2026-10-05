@@ -55,6 +55,9 @@ alias grep="rg --hidden --smart-case --glob='!.git/' --no-search-zip --trim --co
 # Aliases: python
 alias ipy='uvx ipython'
 
+alias nvim='~/.local/share/bob/nvim-bin/nvim'
+alias docker-compose='docker compose'
+
 # =============================================================================
 #
 # To initialize utilities
