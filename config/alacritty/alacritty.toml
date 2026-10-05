@@ -14,7 +14,7 @@ COLORTERM = "truecolor"
 LANG = "en_US.UTF-8"
 
 [window]
-decorations = "none"
+decorations = "Full"
 dynamic_padding = true
 dynamic_title = false
 startup_mode = "Maximized"
